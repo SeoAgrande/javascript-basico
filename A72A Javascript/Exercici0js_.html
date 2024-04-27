@@ -1,0 +1,373 @@
+<!-- Exercici per documentar amb comentaris "A 7.2A JavaScript 0 - Moodle" -->
+
+<!-- Se establece el tipo de documento de HTML 5  -->
+<!DOCTYPE html>
+<!-- Se inicia el documento html pasandole el atributo de lenguaje por defecto en inglés -->
+<html lang="en">
+<!-- se agrega la etiqueta de cabecera head-->
+
+<head>
+    <!-- se define la codificación UTF-8 para evitar problemas de accentos y "ñ"-->
+    <meta charset="UTF-8">
+    <!-- se agrega la etiqueta "meta" con la propiedad viewport para dispositivos móviles obtenga el ancho proporcional para el escalado-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- se pone la etiqueta títle para poner el título del documento HTML-->
+    <title>Proves JavaScript </title>
+    <!-- se cierra la etiqueta del head-->
+</head>
+
+<!-- Aquí comienza un script de tipo Javascript con una función hola mundo -->
+<script type="text/JavaScript">
+    // se declara el nombre de la función
+    function HolaMon1() { 
+        // se ejecuta el alert de hola mundo
+        alert ("Hola Mon1");
+     }
+// se cierra la etiqueta del script de JS
+</script>
+
+<!-- se inicializa la etiqueta del cuerpo de la página con la etiqueta "body"-->
+
+<body>
+
+    <!-- se agrega salto de linea con la etiqueta "br"-->
+    <br>
+    <!-- se agrega salto de linea con la etiqueta "br"-->
+    <br>
+
+    <!-- se inicializa de nuevo un script de JS-->
+    <script language="JavaScript">
+        // se escribe un texto usando la función write del dom (document object model)
+        document.write("Mi primer programa con JavaScript");
+        // se cierra la etiqueta del script
+    </script>
+
+    <!-- se agrega salto de linea con la etiqueta "br"-->
+    <br>
+    <!-- se agrega salto de linea con la etiqueta "br"-->
+    <br>
+
+    <!-- Comentari en HTML -->
+    <!-- Se inicia otro script de Javascript-->
+    <script language="JavaScript">
+
+        // Comentari una línia javascript
+
+        /* comentari de més d'una línia
+        multilínia en javascript */
+
+        // se vuelve a utilizar la funcion write del dom, esta vez utilizando otro texto
+        document.write("Está de suerte, su navegador soporta JavaScript")
+    </script>
+    <!-- se cierra la etiqueta de javascript-->
+
+    <!-- se agrega salto de linea con la etiqueta "br"-->
+    <br>
+    <!-- se agrega salto de linea con la etiqueta "br"-->
+    <br>
+    <!-- se inicia otro script de JS-->
+    <script language="JavaScript">
+
+        // se crea una variable de tipo "array" y se le asignan 3 valores    
+        vacances = ["Nadal", "Pasqua", "Estiu"];
+        // se le asigna un nuevo valor en la posición 4, que es "Semana blanca"
+        vacances[3] = "Setmana blanca";
+        // imprimes con la función write las 4 posiciones del array
+        document.write(vacances[0] + "<br>");
+        document.write(vacances[1] + "<br>");
+        document.write(vacances[2] + "<br>");
+        document.write(vacances[3] + "<br>");
+
+        // cierre del script
+    </script>
+
+    <!-- se le agregan dos saltos de linea-->
+    <br><br>
+
+    <!-- comienza otro script de js-->
+    <script language="JavaScript"> //comentario salto linea tabulacion etc
+        // se declara la variable cadena 11 que tiene información sobre como escapar comillas simples, comillas dobles y barras invertidas y como hacer saltos de lineas en un alert.
+        cadena11 = "Salt\n\nDe línia \t Tabulació \n \' Cometa simple \n \" Cometa doble \n \\ Barra invertida";
+        // se comenta la llamada a la función alert que le pasa como argumento la cadena declarada anteriormente.
+
+        //alert(cadena11);
+    </script>
+    <!-- se cierra la etiqueta script-->
+
+    <!-- hay dos saltos de linea-->
+    <br><br>
+
+    <!-- se inicializa el script de js-->
+    <script language="JavaScript"> //comentario variable
+        // se agrega un salto de linea
+
+        document.write("<br>");
+        // se agrega un salto de linea
+        document.write("<br>");
+        // se agrega un salto de linea con un un uno y guioncitos
+        document.write("1 ------------------ <br>");
+        // se declara una constante llamada PI con valor 3.14
+        const PI = 3.14;
+        // se declara una variable de tipo string y se le asigna el valor juan
+        // la cadena "string" es la cadena de caracteres
+        var nombre = "Juan";
+        // se declara una variable de tipo numérico llamada edad y se le asigna el valor de 30
+        let edad = 30;
+
+        // se escribe el valor de PI y un salo de linea
+        document.write(PI + "<br>");
+        // se escribe el valor de nombre y un salo de linea
+        document.write(nombre + "<br>");
+        // se escribe el valor de edad y un salo de linea
+        document.write(edad + "<br>");
+
+
+        // se agregan dos saltos de linea
+        document.write("<br>");
+        document.write("<br>");
+
+        // se agrega la separación entre el punto 1 y el punto 2 con un salto de linea y guioncitos
+        document.write("2 ------------------ <br>");
+
+        // se declara un nuevo array llamado elmeuVector con una longitud de 20..
+        elmeuVector = new Array(20);
+        // se asigna a la posición 25 el valor de A
+        elmeuVector[25] = "A";
+        // se imprime el valor de A y se le añade un salto de linea
+        document.write(elmeuVector[25] + "<br>");
+
+        // salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+        // salto de linea
+
+        // salto de linea de nuevo ejercicio
+        document.write("3 ------------------ <br>");
+        // se declara un nuevo vector llamado vectorRaro sin longitud
+        vectorRaro = new Array();
+        // se le pone que la posición 33 el texto en string "HTML en català"
+        vectorRaro[33] = "HTML en català";
+        // salto de linea
+        document.write("<br>");
+        // imprime el texto HTML en català que es ele valor del vectorRaro en la posición 33
+        document.write(vectorRaro[33]);
+        // salto de linea
+
+        document.write("<br>");
+
+        // salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+        // salto de linea de nuevo ejercicio
+        document.write("4 ------------------ <br>");
+
+        // se realizan 3 operaciones matemáticas y se separan los resultados por guiones de tipo string por eso no se restan.
+        document.write(2 * 4 + " - " + 5 / 2 + " - " + 5 % 2);
+        // salto de linea
+        document.write("<br>");
+        // se realiza la operación suma y resta
+        document.write(2 + 2 - 1);
+
+        // salto de linea
+        document.write("<br>");
+
+        // salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+
+        // salto de linea de nuevo ejercicio
+        document.write("5 ------------------ <br>");
+
+        // se declara una variable de tipo numérica y se le asigna el valor 35
+        var entero1 = 35;
+        // se declara otra variable de tipo numérica y se le asigna el valor 65
+        var entero2 = 65;
+
+        // con el "--" se decrementa el valor de la variable en una unidad
+        document.write(--entero1);
+        // salto de linea
+        document.write("<br>");
+        // se incrementa en 1 el valor de la otra variable en una unidad con el "++"
+        document.write(++entero2);
+
+        //salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+        // salto de linea para nuevo ejercicio
+        document.write("6 ------------------ <br>");
+        // se declara una nueva variable y se le asigna el valor 32
+        var aa = 32;
+        // se realiza una comprobación de tipo ternaria donde si el valor de "aa" es igual a 33, "bb" valdrá 44 y si no se cumple esta condición, "bb" valdra 22
+        aa == 33 ? bb = 44 : bb = 22;
+        // se imprime el resultado de bb
+        document.write(bb);
+
+        // salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+        // salto de linea y ejercicio nuevo
+        document.write("7 ------------------ <br>");
+        // se declara una variable donde "aa" vale 32 y "bb" vale 22
+        aa = 32; bb = 22;
+        // se suman los valores de las variables "aa" y "bb"
+        aa += bb;
+        // se imprime el resultado
+        document.write(aa);
+        // salto de linea
+        document.write("<br>");
+
+        //salto de linea
+        document.write("<br>");
+        //salto de linea
+        document.write("<br>");
+
+        // salto de linea y nuevo ejercicio
+        document.write("8 ------------------ <br>");
+
+        // se declaran los valores de las variables "aa" y "bb"
+        aa = 32; bb = 22;
+        // se restan los valores declarados anteriormente
+        aa -= bb;
+        // se imprime el resultado 
+        document.write(aa);
+
+        //salto de linea
+        document.write("<br>");
+        //salto de linea
+        document.write("<br>");
+        //salto de linea
+        document.write("<br>");
+        //salto de linea de nuevo ejercicio
+        document.write("9------------------ <br>");
+        // se declaran los valores de las variables "aa" y "bb"
+        aa = 32; bb = 22;
+        // se realiza una division con los valores declarados anteriormente y se realiza una división
+        aa /= bb;
+        // se imprime el resultado
+        document.write(aa);
+        // se realiza un salto de linea
+        document.write("<br>");
+
+        // salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+        // se realiza un salto de linea y empieza un nuevo ejercicio
+        document.write("10------------------ <br>");
+        // se asignan los valores de las variables "aa" y "bb"
+        aa = 32; bb = 22;
+        // se multiplican los valores asignados anteriormente de las variables "aa" y "bb"
+        aa *= bb;
+        // se imprime el resultado
+        document.write(aa);
+
+// salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+        // salto de linea de nuevo ejercicio
+        document.write("11------------------ <br>");
+        
+        // imprime una negación de una sentencia verdadera, el 2=2 es verdadero pero este signo "!" niega la sentencia.
+        document.write(!(2 == 2));
+        // salto de linea
+        document.write("<br>");
+        // verdadero y verdadero te imprime verdadero
+        document.write(true && true);
+        // salto de linea
+        document.write("<br>");
+        // || este es el operador "or" y solo da por válida la primera condición verdadera para ejecutarse.
+        document.write(true || false);
+        // salto de linea
+        document.write("<br>");
+        // 3=3 es verdadero
+        document.write(3 == 3);
+        // salto de linea
+        document.write("<br>");
+
+        // salto de linea
+        document.write("<br>");
+        // salto de linea
+        document.write("<br>");
+        // salto de linea de nuevo ejercicio
+        document.write("12------------------ <br>");
+        //salto de linea
+        document.write("<br>");
+
+        // se declara que "a" vale 1, y a "b" se le incrementa en 1 unidad el valor de "a" y la variable "a" incrementa también porque el "++" está delante
+        a = 1; b = ++a; document.write(a, " ", b, "<br>");
+        // b incrementa lo que valdria "a" pero no le cambia el valor a "a"
+        a = 1; b = a++; document.write(a, " ", b, "<br>");
+
+        // salto de linea 
+        document.write("<br>");
+
+        // fin del script
+    </script>
+
+<!-- dos saltos de linea más-->
+    <br><br>
+
+<!-- se agrega un formulario-->
+    <form action="">
+<!-- se agrega un botón que al clicar ejecuta la función de hola mundo declarado al principio del documento-->
+        <input type="button" name="mostrar" value="Pitjar" onclick="HolaMon1()">
+    </form>
+<!-- se cierra el formulario-->
+
+<!-- se abre un script de js-->
+    <script language="JavaScript"> //cadena de text
+
+        // se declara una variable que no utiliza ningún caracter especial
+        var cadena1 = "Això  és una cadena de text que no utilitza cap caràcter especial";
+
+        // se declara otra variable con saltos de linea
+        var cadena2 = "\n\nAixò és una cadena \nde text que si utilitza \ncaracters especials";
+
+        // se declara otra variable con saltos de linea 
+        var cadena3 = "\n\IES SA COLOMINA";
+
+        // se declara una variable con un código ascii escapando caracteres especiales 
+        var cadena4 = "\n\u00AE by \"my\". 2022";
+
+        // se ejecuta el alert con las 4 cadenas
+       
+        //alert (cadena1 + cadena2 + cadena3 + cadena4);
+    </script>
+    
+    <!-- se cierra la etiqueta javascript-->
+
+    <!-- se inicializa el script de Javascript-->
+    <script language="JavaScript">
+
+// se declara una variable de tipo string con un valor dentro.
+        var var1 = "50" //valor de cadena
+        // se declara una variable de tipo numérica con un valor entero
+        var var2 = 10  //valor d'enter
+
+        // se crea una variable que suma los dos valores de las variables correspondientes
+        resultat_uno = var1 + var2;
+        // se crea una variable que resta los dos valores de las variables correspondientes
+        resultat_dos = var1 - var2;
+
+        // descomentando el alert podemos ver que no se realiza la operación porque se esta intentando combinar una cadena de texto con un valor numérico en una operación matemática.
+
+        //alert("Conversió variable numèrica a string. \nEl resultat és " + resultat_uno);
+        
+        // Lo hace al revés, de variable string a numérica entonces al restar las variables te da 40 y te la interpreta.
+
+        //alert("Conversió variable string a numèrica. \nEl resultat es " +resultat_dos);
+
+    </script>
+<!-- se cierra el script-->
+
+</body>
+<!-- se cierra el body-->
+
+</html>
+<!-- se cierra el html-->
