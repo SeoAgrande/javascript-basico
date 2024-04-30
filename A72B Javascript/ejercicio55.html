@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Diapositiva 55</title>
+</head>
+
+<body>
+
+    <h1>Datos personales + Calculadora</h1>
+    <script>
+
+        // pedir nombre y apellidos
+
+        var nombre = prompt("Introduce tu nombre:");
+        var apellido = prompt("Introduce tu apellido:");
+
+        // Pedir dos números enteros
+
+        var numero1 = parseInt(prompt("Introduce el primer número entero:"));
+        var numero2 = parseInt(prompt("Introduce el segundo número entero"));
+
+        // Realizar las operaciones
+
+        var suma = numero1 + numero2;
+        var resta = numero1 - numero2;
+        var multiplicacion = numero1 * numero2;
+        var division = numero1 / numero2;
+        var comparacion;
+
+        if (numero1 > numero2) {
+            comparacion = "El primer número es mayor que el segundo.";
+        } else if (numero1 < numero2) {
+            comparacion = "El segundo número es mayor que el primero."
+        } else {
+            comparacion = "Ambos números son iguales.";
+        }
+
+
+        // Mostrar los resultados
+
+        var mensaje = "Nombre: " + nombre + "\n" +
+            "Apellidos: " + apellidos + "\n" +
+            "Suma: " + suma + "\n" +
+            "Resta: " + resta + "\n" +
+            "Multiplicación: " + multiplicacion + "\n" +
+            "División: " + division + "\n" +
+            "Comparación: " + comparacion;
+
+        alert(mensaje);
+    </script>
+
+</body>
+
+</html>
