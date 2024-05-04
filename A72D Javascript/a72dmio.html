@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de multiplicar</title>
+    <style>
+        body {
+            padding: 40px;
+        }
+
+        table {
+            border: 2px solid #000;
+            border-radius: 5px;
+            box-shadow: 2px 3px grey;
+            text-align: center;
+
+        }
+
+        tr {
+            border-bottom: 1px solid #000;
+        }
+
+        .primerNumero {
+
+            margin-bottom: 10px;
+        }
+
+        .segundoNumero input {
+
+            margin-left: 15px;
+        }
+
+        .botoncito {
+
+    background-color: orange;
+    border-radius: 20px;
+    padding:10px 20px;
+    cursor: pointer; 
+
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+
+        <div class="primerNumero">
+            Primer número: <input type="number" id="num1" name="num1" min="1" max="10">
+        </div>
+
+        <div class="segundoNumero">
+            Número filas: <input type="number" id="num2" name="num2" min="1" max="10">
+        </div>
+
+
+
+        <br><br>
+        <input class="botoncito" type="button" value="Enviar" onclick="generarTabla()" />
+        <br><br>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>1r Número</th>
+                <th>2n Número</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+
+        <tbody id="tabla">
+
+        </tbody>
+    </table>
+
+
+    <script>
+
+        function generarTabla() {
+
+            const primerNumero = document.getElementById("num1").value;
+            const numeroFilas = document.getElementById("num2").value;
+            const tabla = document.getElementById("tabla").innerHTML;
+
+            if (primerNumero > 10 || numeroFilas > 10) {
+                alert("El número introducido no és válido, debe ser menor o igual a 10")
+                return
+            }
+
+            if (primerNumero == 0 || numeroFilas == 0) {
+                alert("El cero no esta permitido, adiós")
+                return
+            }
+
+            for (let i = 0; i <= numeroFilas; i++) {
+                var contenidoFila = "<tr><td>" + primerNumero + "</td><td>" + i + "</td><td>" + primerNumero * i + "</td></tr>";
+                var fila = document.createElement("tr");
+                fila.innerHTML = contenidoFila;
+                document.getElementById("tabla").appendChild(fila)
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
