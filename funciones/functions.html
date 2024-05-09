@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+
+<body>
+    <script>
+        //Defineix una funció anomenada suma que prengui dos arguments i retorni la seva suma.
+        function suma(a, b) {
+            return a + b;
+        }
+        //Defineix una funció anomenada esParell que prengui un número com a argument i retorni true si el número és parell i false si no ho és.
+        function esParell(num) {
+            return num % 2 === 0;
+        }
+        //Defineix una funció anomenada majorDeDos que prengui dos números com a arguments i retorni el número més gran.
+        function majorDeDos(a, b) {
+            return a > b ? a : b;
+        }
+        //Defineix una funció anomenada invertirCadena que prengui una cadena com a argument i retorni la cadena invertida. Per exemple, si se li passa la cadena "hola", ha de retornar "aloh".
+        function invertirCadena(cadena) {
+            return cadena.split('').reverse().join('');
+        }
+        //Defineix una funció anomenada repetir que prengui una cadena i un número com a arguments i retorni la cadena repetida tantes vegades com indiqui el número. Per exemple, si se li passa la cadena "hola" i el número 3, ha de retornar "holaholahola".
+        function repetir(cadena, num) {
+            return cadena.repeat(num);
+        }
+        //Defineix una funció anomenada esPalindrom que prengui una cadena com a argument i retorni true si la cadena és un palíndrom i false si no ho és. Un palíndrom és una cadena que es llegeix igual d'esquerra a dreta que de dreta a esquerra.
+        function esPalindrom(cadena) {
+            return cadena === cadena.split('').reverse().join('');
+        }
+        //Defineix una funció anomenada calcularFactorial que prengui un número com a argument i retorni el seu factorial. El factorial d'un número és el producte de tots els números enters positius des de 1 fins al propi número.
+        function calcularFactorial(num) {
+            let factorial = 1;
+            for (let i = 1; i <= num; i++) {
+                factorial *= i;
+            }
+            return factorial;
+        }
+        //Defineix una funció anomenada esPrimer que prengui un número com a argument i retorni true si el número és primer i false si no ho és. Un número és primer si és divisible únicament per 1 i per ell mateix.
+        function esPrimer(num) {
+            if (num < 2) {
+                return false;
+            }
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        //Defineix una funció anomenada convertirTemperatura que prengui dos arguments: una temperatura i una escala de temperatura (pot ser "C" per Celsius o "F" per Fahrenheit) i retorni la temperatura convertida a l'altra escala. La fórmula per convertir de Celsius a Fahrenheit és temperatura * 1.8 + 32, i la fórmula per convertir de Fahrenheit a Celsius és (temperatura - 32) / 1.8.
+        function convertirTemperatura(temperatura, escala) {
+            if (escala === 'C') {
+                return temperatura * 1.8 + 32;
+            } else if (escala === 'F') {
+                return (temperatura - 32) / 1.8;
+            }
+        }
+        //Defineix una funció anomenada calcularMitjana que prengui un array de números com a argument i retorni la mitjana dels números a l'array.
+        function calcularMitjana(nums) {
+            return nums.reduce((acc, num) => acc + num, 0) / nums.length;
+        }
+
+        console.log(suma(2, 3)); // 5
+        console.log(esParell(3)); // false
+        console.log(majorDeDos(5, 3)); // 5
+        console.log(invertirCadena('hola')); // aloh
+        console.log(repetir('hola', 3)); // holaholahola
+        console.log(esPalindrom('oso')); // true
+        console.log(calcularFactorial(5)); // 120
+        console.log(esPrimer(7)); // true
+        console.log(convertirTemperatura(32, 'C')); // 89.6
+        console.log(calcularMitjana([1, 2, 3, 4, 5])); // 3
+        
+    </script>
+</body>
+
+</html>
