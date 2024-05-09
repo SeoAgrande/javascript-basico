@@ -19,7 +19,14 @@
         }
         //Defineix una funció anomenada majorDeDos que prengui dos números com a arguments i retorni el número més gran.
         function majorDeDos(a, b) {
-            return a > b ? a : b;
+            // Forma tradicional
+            if (a > b) {
+                return a;
+            } else {
+                return b;
+            }
+            // Forma més moderna
+            // return a > b ? a : b;
         }
         //Defineix una funció anomenada invertirCadena que prengui una cadena com a argument i retorni la cadena invertida. Per exemple, si se li passa la cadena "hola", ha de retornar "aloh".
         function invertirCadena(cadena) {
